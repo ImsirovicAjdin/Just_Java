@@ -30,7 +30,6 @@
         android:layout_height="wrap_content"
         android:text="PRICE"
         android:textSize="16sp"
-        android:id="@+id/price_text_view"
         android:paddingBottom="16dp" />
 
     <TextView
@@ -39,6 +38,7 @@
         android:text="$0"
         android:textSize="16sp"
         android:textColor="#000000"
+        android:id="@+id/price_text_view"
         android:paddingBottom="16dp" />
 
     <Button
