@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        String priceMessage = "Price $ " + (quantity * 5) + " coffees";
+        int price = quantity * 5;
+        String priceMessage = "Price: $" + price + " for " + quantity;
+        priceMessage = priceMessage + " macchiatos";
         displayMessage(priceMessage);
         // displayPrice(quantity * 5);
     }
