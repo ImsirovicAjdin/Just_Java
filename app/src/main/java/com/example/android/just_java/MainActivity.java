@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         int price = quantity * 5;
         String priceMessage = "Price: $" + price + " for ";
         priceMessage = priceMessage + quantity;
-        priceMessage = priceMessage + " cafe lattes";
+        priceMessage = priceMessage + " cappucinos";
         displayMessage(priceMessage);
         // displayPrice(quantity * 5);
     }
