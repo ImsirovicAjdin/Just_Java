@@ -18,6 +18,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        createWeatherMessage(77);
+    }
+
+    /**
+     * Create new message that specifies the city name and temperature.
+     */
+    private String createWeatherMessage(int temperature) {
+        return "Welcome to San Francisco where the temperature is " + temperature + "degrees F";
     }
 
     /**
