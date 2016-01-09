@@ -45,16 +45,17 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(priceMessage);
         // displayPrice(quantity * 5);
 
-        calculatePrice(quantity);
+        calculatePrice(quantity, 10);
     }
 
     /**
      * Calculates the price of the order.
      *
      * @param quantity is the number of cups of coffee ordered
+     * @param pricePerCup is the price of one cujp of coffee
      */
-    private void calculatePrice(int quantity) {
-        int price = quantity * 5;
+    private void calculatePrice(int quantity, int pricePerCup) {
+        int price = quantity * pricePerCup;
     }
 
     /**
