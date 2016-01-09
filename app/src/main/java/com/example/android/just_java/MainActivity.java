@@ -51,8 +51,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calculates the price of the order.
      */
-    private void calculatePrice() {
+    private int calculatePrice() {
         int price = quantity * 5;
+        return price;
     }
 
     /**
