@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(priceMessage);
         // displayPrice(quantity * 5);
 
-        calculatePrice(quantity, 10);
+        calculatePrice(quantity, 10); // to clarify, 10 is the current pricePerCup in dollars
     }
 
     /**
