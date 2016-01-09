@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private int calculatePrice() {
         int price = quantity * pricePerCup;
-        return price;
+        return 700;
     }
 
     /**
