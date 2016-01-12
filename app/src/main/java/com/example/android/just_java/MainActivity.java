@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
-        String name = nameField.getText().toString();
+        String name = nameField.getText().toString(); // (80)* Explanation of this line
 
         // Figure out if the user wants whipped cream topping
         CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
