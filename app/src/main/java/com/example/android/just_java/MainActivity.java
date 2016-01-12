@@ -65,17 +65,21 @@ public class MainActivity extends AppCompatActivity {
      * @return total price
      */
     private int calculatePrice(boolean addWhippedCream, boolean addChocolate) {
+        // Price of 1 cup of coffee
         int basePrice = 5;
 
+        // Add $1 if the user wants whipped cream1
         if (addWhippedCream) {
             basePrice = basePrice + 1;
         }
 
+        // Add $2 if the user wants chocolate
         if (addChocolate) {
             basePrice = basePrice + 2;
         }
 
-        return quantity * 5;
+        // Calculate the total price
+        return quantity * basePrice;
     }
 
     /**
