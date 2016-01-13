@@ -1,10 +1,10 @@
 package com.example.android.just_java;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,20 +53,25 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        EditText nameField = (EditText) findViewById(R.id.name_field);
-        String name = nameField.getText().toString(); // (80)* Explanation of this line
-
-        // Figure out if the user wants whipped cream topping
-        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
-        boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
-
-        // Figure our if the user wants chocolate topping
-        CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
-        boolean hasChocolate = chocolateCheckBox.isChecked();
-
-        int price = calculatePrice(hasWhippedCream, hasChocolate);
-        String priceMessage = createOrderSummary(name, price, hasWhippedCream, hasChocolate);
-        displayMessage(priceMessage);
+//        EditText nameField = (EditText) findViewById(R.id.name_field);
+//        String name = nameField.getText().toString(); // (80)* Explanation of this line
+//
+//        // Figure out if the user wants whipped cream topping
+//        CheckBox whippedCreamCheckBox = (CheckBox) findViewById(R.id.whipped_cream_checkbox);
+//        boolean hasWhippedCream = whippedCreamCheckBox.isChecked();
+//
+//        // Figure our if the user wants chocolate topping
+//        CheckBox chocolateCheckBox = (CheckBox) findViewById(R.id.chocolate_checkbox);
+//        boolean hasChocolate = chocolateCheckBox.isChecked();
+//
+//        int price = calculatePrice(hasWhippedCream, hasChocolate);
+//        String priceMessage = createOrderSummary(name, price, hasWhippedCream, hasChocolate);
+//        displayMessage(priceMessage);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("geo:44.5399608,18.6721593"));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     /**
