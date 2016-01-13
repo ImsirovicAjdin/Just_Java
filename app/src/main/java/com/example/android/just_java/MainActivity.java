@@ -12,7 +12,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends AppCompatActivity {
 
-    int quantity = 2;
+    int quantity = 99;
     int pricePerCup = 5;
 
     @Override
@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the plus button is clicked.
      */
     public void increment(View view) {
+        if (quantity == 100) {
+            return;
+        }
         quantity = quantity + 1;
         displayQuantity(quantity);
     }
