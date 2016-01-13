@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * This method is called when the order button is clicked.
+     * This method is called when the order button is clicked. Ok.
      */
     public void submitOrder(View view) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
