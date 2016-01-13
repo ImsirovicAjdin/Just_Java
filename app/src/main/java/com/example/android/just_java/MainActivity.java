@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void increment(View view) {
         if (quantity == 100) {
             // Show an error message as a toast
-            Toast.makeText(this, "You cannot have more than 100 coffees", Toast.LENGTH_SHORT).short();
+            Toast.makeText(this, "You cannot have more than 100 coffees", Toast.LENGTH_SHORT).show();
             return;
         }
         quantity = quantity + 1;
