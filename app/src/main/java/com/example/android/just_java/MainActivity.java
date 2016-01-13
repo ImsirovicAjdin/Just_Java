@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     public void decrement(View view) {
         if (quantity == 1) {
             // Show an error message as a toast
-            Toast.makeText(this, "You cannot have less then 1 coffee", Toast.LENGHT_SHORT).show();
+            Toast.makeText(this, "You cannot have less then 1 coffee", Toast.LENGTH_SHORT).show();
             // Exit this method early because there's nothing left to do
             return;
         }
